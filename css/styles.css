@@ -1,0 +1,118 @@
+/* css/styles.css */
+
+/* --- Estilos Generales --- */
+/* body { */
+    /* font-family: Arial, sans-serif; */ /* Tailwind's default or 'Inter' via config will be used */
+    /* margin: 0; padding: 0; box-sizing: border-box; */ /* Handled by Tailwind's preflight/reset */
+/* } */
+
+/* --- Encabezado --- */
+/* 'header' specific background color is applied inline in index.php to keep user's preference */
+/* Tailwind classes handle text color, alignment, padding. */
+
+/* --- Navegación --- */
+/* nav ul, nav ul li, nav ul li a will be styled by Tailwind classes in index.php */
+
+/* --- Secciones Principales (main, section) --- */
+/* 'main' and 'section' elements are styled using Tailwind utility classes in index.php for layout,
+   padding, background, rounded corners, and shadows. */
+
+/* --- Botones --- */
+/* Buttons are styled using Tailwind utility classes directly in index.php.
+   Example: bg-blue-500, hover:bg-blue-700, text-white, font-bold, py-2, px-4, rounded. */
+
+/* --- Estilos para Modales (si no se usan exclusivamente clases de Tailwind) --- */
+/* The modals in index.php are styled primarily with Tailwind classes.
+   However, if you need more specific overrides or base modal styles not covered by Tailwind,
+   you can add them here. The example below is mostly illustrative as Tailwind handles this well. */
+
+/*
+.modal {
+    display: none; // Managed by JS and Tailwind 'hidden' class
+    position: fixed;
+    z-index: 50; // Tailwind 'z-50'
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); // Tailwind 'bg-gray-600 bg-opacity-50'
+}
+
+.modal-content {
+    background-color: #fefefe; // Tailwind 'bg-white'
+    margin: 10% auto; // Tailwind 'mx-auto' and positioning utilities
+    padding: 20px; // Tailwind 'p-5'
+    border: 1px solid #888; // Tailwind 'border'
+    width: 80%; // Tailwind 'w-11/12 md:w-1/2 lg:w-1/3' for responsiveness
+    max-width: 500px;
+    border-radius: 10px; // Tailwind 'rounded-md' or 'rounded-lg'
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); // Tailwind 'shadow-lg'
+}
+
+.close-button {
+    // Styled with Tailwind classes directly on the button element in the HTML
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+*/
+
+/* --- Estilos para Formularios dentro de Modales --- */
+/* Form elements (label, input, select, button) are styled using Tailwind classes in index.php. */
+/* Example for an input:
+   .mt-1 .block .w-full .px-3 .py-2 .border .border-gray-300 .rounded-md .shadow-sm
+   .focus:outline-none .focus:ring-indigo-500 .focus:border-indigo-500 .sm:text-sm
+*/
+
+/* --- Mensajes de Feedback (Éxito/Error) --- */
+/* These can be useful for displaying messages from JavaScript operations. */
+.feedback-message {
+    padding: 0.75rem 1.25rem; /* Tailwind: p-3 px-5 */
+    margin-bottom: 1rem;      /* Tailwind: mb-4 */
+    border: 1px solid transparent;
+    border-radius: 0.375rem;  /* Tailwind: rounded-md */
+    text-align: center;
+    font-size: 0.875rem;      /* Tailwind: text-sm */
+}
+
+.feedback-message.success {
+    color: #155724;             /* Tailwind: text-green-700 */
+    background-color: #d4edda;  /* Tailwind: bg-green-100 */
+    border-color: #c3e6cb;      /* Tailwind: border-green-300 */
+}
+
+.feedback-message.error {
+    color: #721c24;             /* Tailwind: text-red-700 */
+    background-color: #f8d7da;  /* Tailwind: bg-red-100 */
+    border-color: #f5c6cb;      /* Tailwind: border-red-300 */
+}
+
+
+/* --- Diseño Responsivo --- */
+/* Tailwind CSS is mobile-first and uses responsive prefixes (sm:, md:, lg:, xl:)
+   to handle responsiveness directly in the HTML markup, reducing the need for
+   custom @media queries in this CSS file for layout changes. */
+
+/* Example of how user's original responsive CSS would translate to Tailwind:
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; // In Tailwind, you'd use flex-col on main for small screens: <main class="flex flex-col md:flex-row ...">
+    }
+
+    section {
+        width: 90%; // In Tailwind: <section class="w-11/12 md:w-1/2 ..."> (w-11/12 is approx 91%)
+    }
+}
+*/
+
+/* Add any other global custom styles or overrides here if necessary. */
+
